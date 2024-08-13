@@ -1,0 +1,89 @@
+@media screen and (max-width: 1200px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #about h2{
+        margin-bottom: 1.5rem;
+    }
+
+    #experience, .section-container {
+        margin-top: 2rem;
+    }
+    #profile, .about-section {
+        display: block;
+    }
+    section {
+        margin: 5%;
+    }
+    .arrow {
+        display: none;
+    }
+    .img-container {
+        width: auto;
+        max-width: 400px;
+        margin: 0 auto 2rem;
+    }
+    .section-box {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #contact, footer {
+        height: 40vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .section-box, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .img-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .profile-title {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+}

@@ -10,7 +10,7 @@
 <body>
     <nav id="top">
     <div id="desktop-nav">
-        <h1 class="logo">Gabriela Jašková</h1>
+        <h1><a class="logo" href="#top">Gabriela Jašková</a></h1>
         <div>
             <ul class="nav-links">
                 <li> <a href="#about">O mně</a></li>
@@ -68,7 +68,6 @@
         </div>
         <div id="popup-cv" class="popup" onclick="closePopupOutside(event, 'popup-cv')">
             <div class="popup-content">
-                <span class="close-btn" onclick="closePopup('popup-cv')">&times;</span>
                 <embed src="./assets/životopis.pdf" type="application/pdf"/>
             </div>
         </div>
@@ -297,7 +296,6 @@
                 </div>
                 <div id="popup-result" class="popup" onclick="closePopupOutside(event, 'popup-result')">
                     <div class="popup-content">
-                        <span class="close-btn" onclick="closePopup('popup-result')">&times;</span>
                         <div id="result-content">
                         </div>
                     </div>
@@ -319,25 +317,21 @@
         </div>
     </section>
     <aside>
-    <i 
-            class="fa-solid fa-angles-up fa-2x arrow"
-            alt="šipka zpět domů"
-            title="Zpět domů"
-            onclick="location.href='./#top'">
-    </i>
+        <p class="message">Líbí se ti, co vidíš? <br> Napiš mi!</p>
+        <i 
+                class="fa-regular fa-message fa-2x arrow"
+                alt="šipka zpět domů"
+                title="Zpět domů"
+                onclick="location.href='./#contact'">
+        </i>
     </aside>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li> <a href="#about">O mně</a></li>
-                    <li> <a href="#experience">Zkušenosti</a></li>
-                    <li> <a href="#projects">Projekty</a></li>
-                    <li> <a href="#contact">Kontakt</a></li>
-                </ul>
+        <p>Konec stránky xD Na závěr něco pro pobavení: <strong><a onclick="openPopup('popup-end')">Životopis trochu jinak</a></strong></p>
+        <div id="popup-end" class="popup" onclick="closePopupOutside(event, 'popup-end')">
+            <div class="popup-content">
+                <embed src="./assets/Graficky_svet.mp3" type="application/pdf"/>
             </div>
-        </nav>
-        <p>Copyright &#169; 2024 Gabriela Jašková. All Rights Reserved</p>
+        </div>
     </footer>
     <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/f2e1505c48.js" crossorigin="anonymous"></script>
